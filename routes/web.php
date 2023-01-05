@@ -20,12 +20,12 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('ah', [
+    return view('eh', [
         'title' => 'About',
     ]);
 });
 
-Route::get('posts/', [PageController::class, 'allPosts'])->middleware('auth');
+Route::get('posts/', [PageController::class, 'allPosts']);
 Route::get('post/{title:slug}', [PageController::class, 'viewPost']);
 Route::get('category/{category:slug}', [PageController::class, 'byCategory']);
 Route::get('user/{user:username}', [PageController::class, 'byUser']);
