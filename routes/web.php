@@ -32,6 +32,7 @@ Route::get('user/{user:username}', [PageController::class, 'byUser']);
 
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'loginUser']);
 
 Route::post('/logout', [LoginController::class, 'logoutUser']);

@@ -20,10 +20,18 @@ class DatabaseSeeder extends Seeder
     {
 
         user::create([
+<<<<<<< HEAD
             'name' => 'affan',
             'username' => 'Affan',
             'email' => 'neoaffan@gmail.com',
             'password' => bcrypt('affan')
+=======
+            'name' => 'thuliumENT',
+            'username' => 'THXV',
+            'email' => 'THXV@gmail.com',
+            'role' => 'ADMIN',
+            'password' => bcrypt('thxpassword')
+>>>>>>> 81088498dbb225c74f765f155aecd61344ea86e2
         ]);
         //     user::create([
         //         'name' => 'seanDenial',
